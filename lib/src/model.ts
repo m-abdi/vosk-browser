@@ -42,7 +42,7 @@ export class Model extends EventTarget {
       .then(response => response.blob())
       .then(blob => {
         const blobURL = URL.createObjectURL(blob);
-        this.worker =new Worker(blobURL , {name: new URL('./vosk.wasm', import.meta.url).toString()});
+        this.worker =new Worker(blobURL , {name: new URL('./vosk.wasm', import.meta.url).toString(), type: "module"});
         URL.revokeObjectURL(blobURL);
         this.initialize()
       })
