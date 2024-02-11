@@ -17,7 +17,7 @@ import {
 } from "./interfaces";
 import { Logger } from "./utils/logging";
 
-import init, { change_range } from "../../../vosk-browser-helper/pkg";
+import init, { change_range } from "../../../voice2text-helper/pkg";
 init();
 
 if (false) {

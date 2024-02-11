@@ -5,7 +5,7 @@
   "main": "./dist/vosk.js",
   "module": "./dist/vosk.js",
   "scripts": {
-    "build": "rollup -c && cp ./src/vosk.wasm ./dist && cp ../../vosk-browser-helper/pkg/vosk-browser-helper_bg.wasm ./dist",
+    "build": "rollup -c && cp ./src/vosk.wasm ./dist && cp ../../voice2text-helper/pkg/voice2text-helper_bg.wasm ./dist",
     "clean": "rm -rf ./node_modules && rm -rf ./dist"
   },
   "keywords": [
@@ -24,7 +24,7 @@
   "dependencies": {
     "@rollup/plugin-wasm": "^6.2.2",
     "uuid": "9.0.0",
-    "vosk-browser-helper": "file:../../vosk-browser-helper/pkg/"
+    "voice2text-helper": "file:../../voice2text-helper/pkg/"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
